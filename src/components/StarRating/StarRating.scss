@@ -1,0 +1,17 @@
+.star-rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .star {
+    width: 25px;
+    height: 25px; 
+    margin-right: 10px; 
+  }
+
+  @media (max-width: 600px) {
+    .star {
+      width: 18px;
+      height: 18px; 
+    }
+  }
