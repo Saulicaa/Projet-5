@@ -1,0 +1,16 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.collapse_group {
+    width: 80% ;
+}
+
+@media (max-width: 600px) {
+    .collapse_group {
+        width: 100% ;
+    }
+}

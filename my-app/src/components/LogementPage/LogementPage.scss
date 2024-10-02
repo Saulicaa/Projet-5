@@ -1,0 +1,133 @@
+.oui {
+    color: #FF6060;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h1 {
+    margin: 0;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+h2 {
+    margin: 0;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+}
+.host {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.image-host {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.non {
+    color: #FF6060;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.collapse-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.collapse-logement {
+    width: 45%;
+}
+
+ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.tags {
+    display: flex;
+}
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 15px;
+    background-color: #FF6060;
+    color: white;
+    padding: 0 10px;
+    margin-right: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 115px;
+    min-height: 25px; 
+    text-align: center; 
+    white-space: nowrap; 
+}
+.rating {
+    display: flex;
+    
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    .info {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    ul {
+        font-size: 12px;
+    }
+
+    .non {
+        flex-direction: row-reverse;
+    }
+
+    .host {
+        justify-content: unset;
+    }
+
+    .image-host {
+        width: 32px;
+        height: 32px;
+
+    }
+
+    .collapse-group {
+        flex-direction: column;
+    }   
+
+    .collapse-logement {
+        width: 100%;
+    }
+    
+    .tag {
+        font-size: 10px;
+        min-width: 84px;
+        min-height: 18px;
+    }
+}
