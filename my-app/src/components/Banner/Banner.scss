@@ -36,16 +36,7 @@
 }
 
 @media (max-width: 500px) {
-
-  .banner {
-    justify-content: initial;
-    padding-left: 20px;
-    height: 111px;
-    width: 100%;
-  }
-
-  .banner h1 span {
-    display: block;
-    text-align: left;
+  .banner h1 {
+    font-size: 25px;
   }
 }

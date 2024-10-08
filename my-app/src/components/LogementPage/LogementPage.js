@@ -21,7 +21,7 @@ const LogementPage = () => {
     <div>
       <Slideshow images={logement.pictures} />
       <div className="info">
-        <div className="oui">
+        <div className="description_1">
           <div className="titre">
             <h1>{logement.title}</h1>
             <h2>{logement.location}</h2>
@@ -32,7 +32,7 @@ const LogementPage = () => {
             </div>
           </div>
         </div>   
-        <div className="non">
+        <div className="description_2">
           <div className="host">
             <p>{logement.host.name}</p>
             <img src={logement.host.picture} alt={logement.host.name} className="image-host" />

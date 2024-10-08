@@ -1,4 +1,4 @@
-.oui {
+.description_1 {
     color: #FF6060;
     display: flex;
     justify-content: space-between;
@@ -29,7 +29,7 @@ h2 {
     height: 64px;
     border-radius: 50%;
 }
-.non {
+.description_2 {
     color: #FF6060;
     display: flex;
     justify-content: space-between;
@@ -103,7 +103,7 @@ ul {
         font-size: 12px;
     }
 
-    .non {
+    .description_2 {
         flex-direction: row-reverse;
     }
 

@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     background: #F6F6F6;
     border-radius: 25px;
-    gap: 52px;
+    gap: 40px 3%;
     padding: 52px;
     box-sizing: border-box; 
     justify-content: center;
@@ -15,12 +15,18 @@
     align-items: center;
 }
 
-@media (max-width: 500px) {
-    .cards-container {
-        padding: 0;
-        background: none;
-        gap: 20px 2%;
-        margin-bottom: 20px;
-    }
+a.card-link {
+    max-width: 30%;
+}
 
+@media (max-width: 1235px) {
+    a.card-link {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 630px) {
+    a.card-link {
+        max-width: 100%;
+    }
 }
