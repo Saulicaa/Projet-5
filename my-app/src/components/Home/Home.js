@@ -18,6 +18,7 @@ function Home() {
             title={logement.title} 
             imageUrl={logement.cover} 
             link={`/logement/${logement.id}`} 
+            key={logement.id}
           />
         ))}
       </div>

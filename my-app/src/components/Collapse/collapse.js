@@ -9,29 +9,21 @@ function Collapse({ title, children, className = '' }) {
     setIsOpen(!isOpen);
   };
 
-  let openClass = '';
-  let rotateClass = '';
-  let showClass = '';
-  if (isOpen === true) {
-      openClass = 'open';
-      rotateClass = 'rotate';
-      showClass = 'show';
-  }
   return (
-      <div className={`collapse ${openClass} ${className}`}>
+      <div className={`collapse ${isOpen ? 'open' : ''} ${className}`}>
         <div className="collapse-header" onClick={toggleCollapse}>
           <h3>{title}</h3>
           <img 
             src={arrow} 
             alt="Toggle collapse" 
-            className={`collapse-icon ${rotateClass}`} 
+            className="collapse-icon"
           />
         </div>
-        <div className={`collapse-content ${showClass}`}>
+        <div className="collapse-content">
           {children}
         </div>
       </div>
-    );
+  );
 }
 
 export default Collapse;
